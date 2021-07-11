@@ -26,6 +26,11 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # 次の3つを追加
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'pry-doc'
+
 end
 
 group :development do
