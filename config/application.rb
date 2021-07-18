@@ -24,6 +24,10 @@ module RecommendedFoodApp
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
+    # 以下を追加すれば日本語に
+    config.i18n.default_locale = :ja
+    # タイムゾーンも変更するなら，以下を追加
+    config.time_zone = "Asia/Tokyo"
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
