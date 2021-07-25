@@ -34,3 +34,6 @@ yarn-debug.log*
 
 .DS_Store
 /vendor/bundle
+
+# 開発環境で投稿した画像が全てgithubのリポジトリに入らないようにするため
+/public/uploads/

@@ -2,6 +2,9 @@
 <div>
   <p>【メールアドレス】 <%= current_user.email %></p>
   <p>【食品名】 <%= @food.name %></p>
+  <% if @food.image? %>
+  <p><%= image_tag @food.image.url %></p>
+<% end %>
   <p>【コメント】</p>
   <%= simple_format(h(@food.comment)) %>
   <p>
