@@ -1,7 +1,7 @@
 class FoodsController < ApplicationController
   before_action :set_post, only: %i[edit update destroy]
   def index
-    @foods = Food.order(:created_at)
+    @foods = Food.includes(:user, :likes).order(:created_at)
   end
 
   def new
